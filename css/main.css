@@ -1,0 +1,80 @@
+body {
+    background-color: lightsteelblue; /* Sätter bakgrunden till blå */
+    display: flex;
+    justify-content: center; /* Centrerar innehållet horisontellt */
+    align-items: center; /* Centrerar innehållet vertikalt */
+    height: 100vh; /* Full höjd på skärmen */
+    margin: 0; /* Tar bort standardmarginaler */
+    flex-direction: column; /* Justerar innehållet till att vara vertikalt */
+}
+
+.white-box-head {
+    background-color: white;  /* Vit bakgrund för rutan */
+    width: 700px;             /* Bredd på rutan */
+    height: 250px;            /* Höjd på rutan */
+    border-radius: 15px;      /* Rundar hörnen på rutan */
+    border: 1px solid black;  /* Svart kant runt rutan */ 
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2); /* Skugga (valfritt) */
+    text-align: center;       /* Centrera texten inuti rutan */
+    font-family: Arial, sans-serif; /* Snyggare teckensnitt */
+    font-size: 30px;          /* Justera textstorleken */
+    margin-bottom: 10px; /* Lägger till avstånd mellan headern och mittenrutan */
+}
+
+.white-box-head h1 {
+    color: lightslategray;  /* Gör h1-taggen blå */
+    text-align: left;       /* Placera h1 till vänster i rutan */
+    margin: 0;              /* Ta bort standardmarginaler */
+}
+
+.white-box-foot {
+    background-color: white;  /* Vit bakgrund för rutan */
+    width: 700px;             /* Bredd på rutan */
+    height: 150px;            /* Höjd på rutan */
+    border-radius: 15px;      /* Rundar hörnen på rutan */
+    border: 1px solid black;  /* Svart kant runt rutan */ 
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2); /* Skugga (valfritt) */
+    margin-top: 20px; /* Lägger till avstånd mellan mittenrutan och footern */
+    text-align: center;       /* Centrera texten inuti rutan */
+    font-family: Arial, sans-serif; /* Snyggare teckensnitt */
+    font-size: 30px;          /* Justera textstorleken */
+    margin-bottom: 20px; /* Lägger till avstånd mellan headern och mittenrutan */
+}
+
+#comicNav {
+    display: flex; /* Flexbox för att arrangera knapparna horisontellt */
+    justify-content: center; /* Centrerar knapparna horisontellt */
+    gap: 15px; /* Lägg till avstånd mellan knapparna */
+    margin-top: 20px; /* Avstånd från komiken till knapparna */
+}
+
+#comicNav button {
+    background-color: lightslategray; /* Grön bakgrund för knapparna */
+    border: none;
+    color: white;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 5px; /* Rundade kanter */
+    transition: background-color 0.3s;
+}
+
+#comicNav button:hover {
+    background-color: lightslategray; /* Ändra färg när man hovrar */
+}
+
+#comic {
+    background-color: white;
+    width: 700px;
+    height: auto;
+    padding: 20px;
+    text-align: center;
+    margin-bottom: 20px; /* Avstånd mellan komiken och knapparna */
+}
+
+#comic img {
+    max-width: 100%; /* Bilden får inte vara bredare än förälderns bredd */
+    height: auto;    /* Bevara proportionerna */
+    display: block;  /* Säkerställer att det inte finns extra marginaler */
+    margin: 0 auto;  /* Centrerar bilden horisontellt */
+}
